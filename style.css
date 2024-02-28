@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
-body {
-    background: #d52b1e;
+body{
+    background: #cde0c9; 
     font-family: 'Montserrat', sans-serif;
     color: #3E363F;
 }
 
-#contenedor {
+#contenedor{
     width: 900px;
     height: 500px;
     text-align: center;
@@ -14,18 +14,22 @@ body {
     position: absolute;
     inset: 0;
     margin: auto;
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+      0 10px 10px rgba(0,0,0,0.22);
 }
 
-#calculadora {
-    background: white;
+#calculadora{
+    background: #f2e6cf;
     /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
     width: 50%;
     height: 100%;
     float: left;
 }
 
-#detalle {
-    background: #0038a8;
+#detalle{
+    background: #68b2a0;
     /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
     width: 50%;
     height: 100%;
@@ -33,7 +37,7 @@ body {
     color: #f6f5f7;
 }
 
-.contenido {
+.contenido{
     /* Estas tres lineas van a centrar el contenido verticalmente dentro de cada div */
     position: relative;
     top: 50%;
@@ -43,7 +47,7 @@ body {
 }
 
 input {
-    width: 70%;
+	width: 70%;
     padding: 12px 15px;
     border: none;
     background-color: #eee;
@@ -51,31 +55,39 @@ input {
 
 button {
     font-size: 15px;
-    font-weight: bold;
-    padding: 12px 45px;
-    border-radius: 30px;
-    background-color: #d52b1e;
-    border: 1px solid #d52b1e;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: transform 20ms ease-in;
+	font-weight: bold;
+	padding: 12px 45px;
+	border-radius: 30px;
+	background-color: #68b2a0;
+	border: 1px solid #68b2a0;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	transition: transform 20ms ease-in;
+    margin: 20px;
 }
 
 button:active {
-    transform: scale(0.95);
+	transform: scale(0.95);
 }
 
-#contenedor {
-    width: 900px;
-    height: 500px;
-    text-align: center;
-    /* Estas 3 lineas se encargan de centrar el div vertical y horizontalmente */
-    position: absolute;
-    inset: 0;
-    margin: auto;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-        0 10px 10px rgba(0, 0, 0, 0.22);
+
+#error{
+    color: red;
+    font-weight: bold;
+    display: none;
+}
+
+#flu,#man{
+    color: #3E363F;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+    display: none;
+}
+#flun {
+    color: #3E363F;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
 }
